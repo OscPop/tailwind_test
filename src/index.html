@@ -7,7 +7,34 @@
     <link href="/public/styles.css" rel="stylesheet">
 </head>
 <body>
-    <h1 class="text-red-500 text-6xl">Hello World</h1>
-    <div class="bg-blue-500 text-black font-bold font-serif">This is a div</div>
+    <!-- Make the background a dark grey color-->
+    <div class="bg-gray-500">
+        <!-- Make a container with a width of 1/2 the screen and center it -->
+        <div class="container mx-auto">
+            <!-- Make a header bar with information -->
+            <div class="bg-black text-white p-4 rounded-2xl">
+                <h1 class="text-2xl">Hello World</h1>
+                <!-- Add links to about and home page at the top right corner -->
+                <div class="flex justify-end">
+                    <a href="/about" class="p-2">About</a>
+                    <a href="/" class="p-2">Home</a>
+                </div>
+            </div>
+            <h1 class="text-red-500 text-6xl">Hello World</h1>
+            <!-- make 3 columns with rounded edges -->
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-blue-500 rounded-lg">
+                    <h1 class="text-2xl lg\:align-middle">Hello World</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+                <div class="bg-red-500 rounded-lg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+                <div class="bg-green-500 rounded-lg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
